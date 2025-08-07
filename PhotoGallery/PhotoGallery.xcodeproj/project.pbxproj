@@ -3,28 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 70;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		847D3B982167607E00AA9A43 /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D3B972167607E00AA9A43 /* ImageViewCell.swift */; };
-		849C1DA22164A3ED00C16F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C1DA12164A3ED00C16F04 /* AppDelegate.swift */; };
-		849C1DA42164A3ED00C16F04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C1DA32164A3ED00C16F04 /* ViewController.swift */; };
-		849C1DA72164A3ED00C16F04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849C1DA52164A3ED00C16F04 /* Main.storyboard */; };
-		849C1DA92164A3F600C16F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849C1DA82164A3F600C16F04 /* Assets.xcassets */; };
-		849C1DAC2164A3F600C16F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849C1DAA2164A3F600C16F04 /* LaunchScreen.storyboard */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		847D3B972167607E00AA9A43 /* ImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
 		849C1D9E2164A3ED00C16F04 /* PhotoGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		849C1DA12164A3ED00C16F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		849C1DA32164A3ED00C16F04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		849C1DA62164A3ED00C16F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		849C1DA82164A3F600C16F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		849C1DAB2164A3F600C16F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		849C1DAD2164A3F600C16F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		998A40BD2E4517730024F5E2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 849C1D9D2164A3ED00C16F04 /* PhotoGallery */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		998A40B52E4517730024F5E2 /* PhotoGallery */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (998A40BD2E4517730024F5E2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = PhotoGallery; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		849C1D9B2164A3ED00C16F04 /* Frameworks */ = {
@@ -40,7 +38,7 @@
 		849C1D952164A3ED00C16F04 = {
 			isa = PBXGroup;
 			children = (
-				849C1DA02164A3ED00C16F04 /* PhotoGallery */,
+				998A40B52E4517730024F5E2 /* PhotoGallery */,
 				849C1D9F2164A3ED00C16F04 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,20 +49,6 @@
 				849C1D9E2164A3ED00C16F04 /* PhotoGallery.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		849C1DA02164A3ED00C16F04 /* PhotoGallery */ = {
-			isa = PBXGroup;
-			children = (
-				849C1DA12164A3ED00C16F04 /* AppDelegate.swift */,
-				849C1DA32164A3ED00C16F04 /* ViewController.swift */,
-				849C1DA52164A3ED00C16F04 /* Main.storyboard */,
-				849C1DA82164A3F600C16F04 /* Assets.xcassets */,
-				849C1DAA2164A3F600C16F04 /* LaunchScreen.storyboard */,
-				849C1DAD2164A3F600C16F04 /* Info.plist */,
-				847D3B972167607E00AA9A43 /* ImageViewCell.swift */,
-			);
-			path = PhotoGallery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +66,9 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				998A40B52E4517730024F5E2 /* PhotoGallery */,
+			);
 			name = PhotoGallery;
 			productName = PhotoGallery;
 			productReference = 849C1D9E2164A3ED00C16F04 /* PhotoGallery.app */;
@@ -93,8 +80,9 @@
 		849C1D962164A3ED00C16F04 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 2600;
 				ORGANIZATIONNAME = Anbu;
 				TargetAttributes = {
 					849C1D9D2164A3ED00C16F04 = {
@@ -126,9 +114,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				849C1DAC2164A3F600C16F04 /* LaunchScreen.storyboard in Resources */,
-				849C1DA92164A3F600C16F04 /* Assets.xcassets in Resources */,
-				849C1DA72164A3ED00C16F04 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,38 +124,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				849C1DA42164A3ED00C16F04 /* ViewController.swift in Sources */,
-				847D3B982167607E00AA9A43 /* ImageViewCell.swift in Sources */,
-				849C1DA22164A3ED00C16F04 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		849C1DA52164A3ED00C16F04 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				849C1DA62164A3ED00C16F04 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		849C1DAA2164A3F600C16F04 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				849C1DAB2164A3F600C16F04 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		849C1DAE2164A3F600C16F04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -193,6 +157,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -202,8 +167,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = EWXP659WH5;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -223,6 +190,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -232,6 +200,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -254,6 +223,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -263,8 +233,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = EWXP659WH5;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -277,6 +249,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -288,8 +261,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EWXP659WH5;
 				INFOPLIST_FILE = PhotoGallery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,8 +279,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EWXP659WH5;
 				INFOPLIST_FILE = PhotoGallery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
