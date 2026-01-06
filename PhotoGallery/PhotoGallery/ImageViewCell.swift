@@ -14,10 +14,6 @@ class ImageViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     func setupData(image: UIImage?) {
         imageView.image = image
     }
