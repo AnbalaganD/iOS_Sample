@@ -77,11 +77,10 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath
     ) -> CGSize {
-        print(collectionView.frame)
         let itemPerRow: CGFloat = UIDevice.current.orientation.isLandscape ? 7 : 4
-        let paddingSpace = itemPerRow > 2 ? (itemPerRow - 1) * itemSpacing : 0
-        let withPerItem = (collectionView.frame.size.width - paddingSpace) / itemPerRow
-        return CGSize(width: withPerItem, height: withPerItem)
+        let padding = itemPerRow > 2 ? (itemPerRow - 1) * itemSpacing : 0
+        let widthPerItem = (collectionView.frame.size.width - padding) / itemPerRow
+        return CGSize(width: widthPerItem, height: widthPerItem)
     }
     
     func collectionView(
